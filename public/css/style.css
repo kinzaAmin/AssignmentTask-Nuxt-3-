@@ -1,0 +1,408 @@
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/background.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    color: #FFFFFF;
+    position: relative;
+    left: 0%;
+    top: -3% !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+    
+  
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 1rem;
+    /* position: fixed; */
+    width: auto;
+    height: 90px;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+    
+    ;
+    /* z-index: 10; */
+    
+}
+@media screen and (max-width: 520px) {
+    .nav{
+      padding: 0.5rem;
+    }
+}
+
+
+/* .nav::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; 
+  height: 0.2px; 
+  background-color:  rgba(255, 255, 255, 1);
+} */
+.btn{
+    background: linear-gradient(#0D93EF, #0025CE);
+width: 177px;
+    padding: 0.6rem;
+    border-radius: 100px;
+    border:1px solid #0025CE;
+    color:  #FFFFFF;
+
+ }
+
+@media screen  and (max-width:520px){
+ .btn{
+  width: 100px;
+ }
+   
+}
+
+
+ .content-container{
+    align-content: center;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 30%; 
+    left: 50%;
+    text-align: center;
+    padding: 3%;
+   
+ }
+
+ .content-container h1{
+margin-top: 5%;
+
+
+ }
+
+
+ @media screen and (max-width: 920px) {
+  .content-container{
+    top: 30%; 
+    left: 50%;
+    padding: 2%;
+    transform: translate(-60% ,-60%);
+  }
+  .content-container h1{
+    font-size: medium !important;
+  }
+}
+
+ @media screen and (max-width: 820px) {
+  .content-container{
+    top: 30%; 
+    left: 50%;
+    padding: 2%;
+  }
+  .content-container h1{
+    font-size: medium !important;
+  }
+}
+ @media screen and (max-width: 740px) {
+  .content-container{
+    top: 10%; 
+    left: 50%;
+    padding: 2%;
+  }
+  .content-container h1{
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 640px) {
+  .content-container{
+    top: 10%; 
+    left: 50%;
+   
+  }
+  .content-container h1{
+    font-size: large;
+  }
+
+}
+@media screen and (max-width: 520px) {
+  .content-container{
+    top: 10%; 
+    left: 50%;
+    width: 80%;
+    transform: translate(-50% ,-60%);   
+  }
+
+  .content-container span{
+   font-size: small;
+   padding: 10px;
+   width: 150px !important;
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content-container{
+    top: 10%; 
+    left: 50%;
+    width: 90%;
+    transform: translate(-50% ,-60%);   
+  }
+
+  .content-container span{
+    font-size: small;
+    padding: 10px;
+    width: 150px !important;
+    font-size: xx-small;
+    
+ 
+   }
+ }
+
+ .content-container span{
+    background: linear-gradient(#030A2D , #030616);
+    Padding : 0.8rem !important ;
+    width: 241px;
+    border-radius: 100px;
+   
+
+ }
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+margin-top: 20%;
+width: auto;
+margin-left: 3%;
+margin-right: 3%;
+}
+
+@media screen and (max-width: 740px) {
+  .card-container{
+      max-width: 90%;
+      margin: auto;
+      grid-template-columns:  1fr;
+      margin-top: 40%;
+  }
+}
+ .card {
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: transparent;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+.card-btn{
+  color: #18EBFE;
+ font-weight:700;
+font-size:14px;
+line-height :16.8px ;
+background: rgba(0, 0, 0, 0.3);
+width: 61px;
+padding: 0.5rem;
+border-radius: 5px;
+}
+
+/* .dropdown-menu {
+  position: absolute;
+  left: 75%;
+ 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative; 
+  border-radius: 15px;
+  background-color:  rgba(9, 37, 48, 1);
+  padding: 8%;
+  align-items: center;
+}
+
+
+.dropdown-menu li {
+  cursor: pointer;
+  padding: 10px;
+ width: 268px;
+ font-weight: 250;
+ font-size: 24px;
+line-height: 28.8px;
+ 
+  position: relative; 
+}
+
+.dropdown-menu li::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0px; 
+  right: 10px;
+  width: calc(100% - 50px); 
+  height: 1px;
+  height: 1px;
+  background-color:  rgba(255, 255, 255, 1);
+}
+
+.dropdown-menu li.selected {
+ color: rgba(0, 234, 255, 1); 
+} */
+
+.dropdown-menu {
+  position: absolute;
+  left: 75%;
+ 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Set position relative for positioning the line */
+  border-radius: 15px;
+  background-color:  rgba(9, 37, 48, 1);
+  padding: 8%;
+  align-items: center;
+}
+
+
+.dropdown-menu li {
+  cursor: pointer;
+  padding: 10px;
+ width: 268px;
+ font-weight: 250;
+ font-size: 24px;
+line-height: 28.8px;
+  /* Transparent background */
+  position: relative; /* Position relative for pseudo-element */
+}
+
+.dropdown-menu li::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0px; /* Adjust as needed to set the border width */
+  right: 10px;
+  width: calc(100% - 50px); /* Adjust as needed to set the border width */
+  height: 1px;
+  height: 1px;
+  background-color:  rgba(255, 255, 255, 1);
+}
+
+.dropdown-menu li.selected {
+ color: rgba(0, 234, 255, 1); /* Selected background color */
+}
+
+@media screen and (max-width: 920px) {
+  .dropdown-menu {
+    
+    left: 55%;
+    z-index: 10;
+    
+   
+  }
+}
+ 
+@media screen and (max-width: 820px) {
+  .dropdown-menu {
+    
+    left: 55%;
+    z-index: 10;
+    
+   
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .dropdown-menu {
+    
+    left: 45%;
+    z-index: 10;
+    
+   
+  }
+}
+@media screen and (max-width: 620px) {
+  .dropdown-menu {
+    
+    left: 35%;
+    z-index: 10;
+    
+   
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .dropdown-menu {
+    
+    left: 30%;
+    z-index: 10;
+    
+   
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .dropdown-menu {
+    
+    left: 26%;
+    z-index: 10;
+    
+   
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .dropdown-menu {
+    
+    left: 20%;
+    z-index: 10;
+    
+   
+  }
+}
+@media screen and (max-width: 480px) {
+  .dropdown-menu {
+    
+    left: 13%;
+    z-index: 10;
+    
+   
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .dropdown-menu {
+    
+    left: 10%;
+    z-index: 10;
+    
+   
+  }
+}
+
+
+
+
+
